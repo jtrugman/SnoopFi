@@ -45,7 +45,7 @@ The `-dp` option allows you to run the docker container 'detached' which means t
 `docker kill CONTAINER_ID`
 
 ## Postman Usage
-We have built a (Postman)[https://www.postman.com/] collection to make it easier to document how our API works and the HTTP requests/responses to communicate with it. 
+We have built a [postman](https://www.postman.com/) collection to make it easier to document how our API works and the HTTP requests/responses to communicate with it. 
 
 This Postman collection is stored in postman.json file in the server directory. To open the file in Postman you have to download the Postman Application (or run it via the webapp) and click the import button. It will then prompt you to upload a postman json file. Either navigate to this file or click and drag it into the application. This will import the collection and allow you to use it like a regular Postman collection made in the application. For more details on how to import a Postman Collection see this guide made by Postman https://learning.postman.com/docs/getting-started/importing-and-exporting-data/
 
