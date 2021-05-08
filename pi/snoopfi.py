@@ -44,17 +44,15 @@ def get_subject(tar):
         return "Network Scan Data From" + " " + tar
 
 def format_result(result):
-    formatted_result = json.dumps(result)
 
     # return string
-    return formatted_result
+    return str(result)
 
 options = get_args()
 scanned_output = scan(options.target)
 display_result(scanned_output)
 subject = get_subject(options.target)
 output = format_result(scanned_output)
-
 
 url = "http://localhost:3000/network"
 
