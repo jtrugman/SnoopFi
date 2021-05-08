@@ -22,7 +22,7 @@ exports.network_update = (req, res, next) => {
             console.log('Email sent: ' + info.response);
         }
     })
-    res.status(200).json(
+    res.status(201).json(
         {
             response: "Update Sent"
         })
