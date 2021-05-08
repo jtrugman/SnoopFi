@@ -1,10 +1,10 @@
 ## Docker Usage
 ### Build the Docker Container
 cd /server
-docker build -t snoopfi_1.0 .
+docker build -t snoopfi .
 
 ### Run Docker Container
-sudo docker run -dp 3000:3000 snoopfi_1.0
+sudo docker run -dp 3000:3000 snoopfi
 
 ### Kill the Docker Container
 docker ps
