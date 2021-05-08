@@ -16,26 +16,26 @@ For distributing the data collection from the raspberry pi via email we use the 
 We have included package.json and package-lock.json files in order to make the application easier to port to other devices or users who want to run it. In order to start the application the traditional route with Node.js there are two steps: The first is to download all the dependancies included in the package-lock.json file and the second is to run the server. 
 
 To install all the dependancies use the following command when in the /server directory:
-npm install 
+`npm install`
 
 Then run the following command to start the server when in the /server directory:
-npm server.js
+`npm server.js`
 
 To kill the server do a 
-control c
+`control c`
 
 
 ## Docker Usage
 We have also incorporated deployment via a docker container in this project. To build and run the application via docker please follow the steps below. 
 
 ### Build the Docker Container
-cd /server
-docker build -t snoopfi .
+`cd /server`
+`docker build -t snoopfi .`
 
 ### Run Docker Container
-sudo docker run -dp 3000:3000 snoopfi
+`sudo docker run -dp 3000:3000 snoopfi`
 
 ### Kill the Docker Container
-docker ps
+`docker ps`
 *copy the CONTAINER ID
-docker kill CONTAINER_ID
+`docker kill CONTAINER_ID`
