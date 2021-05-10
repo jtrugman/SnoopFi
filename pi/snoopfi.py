@@ -34,7 +34,7 @@ def scan(ip):
         result.append(client_dict)
 
     return result
-
+    #Displays IP and Mac Addresses in Terminal
 def display_result(result):
     print("-----------------------------------\nIP Address\tMAC Address\n-----------------------------------")
     for i in result:
@@ -42,7 +42,7 @@ def display_result(result):
 
 def get_subject(tar):
         return "Network Scan Data From" + " " + tar
-
+    #Converts from dictionary list to string 
 def format_result(result):
     formatted_result = json.dumps(result)
 
@@ -55,7 +55,7 @@ display_result(scanned_output)
 subject = get_subject(options.target)
 output = format_result(scanned_output)
 
-
+#Connects to Server and sends email with data
 url = "http://localhost:3000/network"
 
 payload="{\n    \"to\" : \"" + options.email + "\",\n    \"subject\": \"" + subject + "\",\n    \"net_data\" : \"" + output + "\"\n}"
