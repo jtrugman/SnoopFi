@@ -42,12 +42,11 @@ def display_result(result):
 
 def get_subject(tar):
         return "Network Scan Data From" + " " + tar
-    #Converts from dictionary list to string 
+    #Converts from dictionary list to string
 def format_result(result):
-    formatted_result = json.dumps(result)
 
     # return string
-    return formatted_result
+    return str(result)
 
 options = get_args()
 scanned_output = scan(options.target)
